@@ -47,6 +47,13 @@ private:
     Jaguar * winch_jag;
 
     shooter * shooter_wheels;
+
+    PIDController * launch_control;
+    two_jags * launcher_jags;
+    launch_counter * launch_speed;
+#if DEBUG_612
+    const char * key;
+#endif
 };
 
 
